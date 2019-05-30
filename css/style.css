@@ -76,7 +76,7 @@ header {
             to top,
             #173e43,
              #dddfd4),
-        url('../images/backgrounds/yosemite.jpg');
+        url('../images/yosemite.jpg');
     background-blend-mode: color;
     background-position: center center;
     background-repeat: none;
@@ -300,7 +300,6 @@ div#rando-rectangle {
 
 section#contact {
     background-color: #173e43;
-    background-image: url(../img/map-image.png);
     background-position: center;
     background-repeat: no-repeat;
 }
