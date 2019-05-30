@@ -138,6 +138,12 @@ header .intro-text .intro-heading {
     margin-bottom: 2px;
 }
 
+@media(max-width:768px){
+    .section-heading{
+        font-size: 60px;
+    }
+}
+
 
 #about {
     text-align: center;
@@ -210,14 +216,21 @@ div#rando-rectangle {
 }
 
 .carousel-item img{
-    height: 700px;
+    max-height: 700px;
     object-fit: contain;
+}
+
+@media(max-width:768px) {
+    .carousel-item img{
+        max-width: 700px;
+    }
 }
 
 
 #experience{
     text-align: center;
     background-color: white;
+    max-width: 100%;
 }
 
 #arrows{
@@ -237,6 +250,24 @@ div#rando-rectangle {
     @keyframes mymove {
     from {left: 0px;}
     to {left: 300px;}
+}
+
+@media(max-width:768px) {
+    #arrows{
+        width: 200px;
+        animation: mymove 6s 0s infinite alternate;
+        -webkit-animation: mymove 6s 0s infinite alternate; /* Safari 4.0 - 8.0 */
+        }
+        /* Safari 4.0 - 8.0 */
+        @-webkit-keyframes mymove {
+        from {left: 0px;}
+        to {left: 100px;}
+        }
+    
+        @keyframes mymove {
+        from {left: 0px;}
+        to {left: 100px;}
+    }
 }
 
 #experiencescroll{
@@ -308,11 +339,5 @@ section#contact .section-heading {
     color: #fff;
 }
 
-
-
-footer {
-    padding: 25px 0;
-    text-align: center;
-}
 
 
