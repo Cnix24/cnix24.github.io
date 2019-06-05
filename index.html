@@ -82,7 +82,7 @@
                     <img src="images/avataaars.png" class="rounded mx-auto d-block" style="max-height: 400px; padding-top:15px" alt="...">
                 </div>
                 <div class="col-md-5 my-2 text-left" style="flex-direction: column" data-aos="fade-right" data-aos-offset="300" data-aos-duration="2000" data-aos-easing="linear">
-                        <div class="rectangle-a float-left my-2" id="web-rectangle" >
+                        <div class="rectangle-a float-left my-2" id="web-rectangle">
                             <h4>Web</h4>
                             <p>HTML, CSS, Bootstrap</p>
                         </div>
@@ -184,7 +184,7 @@
         <!---EXPERIENCE TITLE-->
         <section class="my-5" id="experience">
             <div class="container-fluid">
-                <div class="flex-row">
+                <div class="row">
                     <div class="col-md-4">
                         <h2 class="section-heading">Experience</h2>
                         <h3 class="section-subheading text-muted">A combination of work history, certifications, education, and achievements.</h3>
@@ -206,9 +206,8 @@
                                 <img class="card-img-top" src="images/olivers.png" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">Oliver's Markets</h5>
-                                    <h6>2007-2012</h6>
-                                    <p class="card-text">Assistant Corporate Graphic Designer</p>
-                                    <a href="#" class="btn">More Info</a>
+                                    <button type="button" class="btn btn-outline-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="2007-2012, Corporate Graphic Designer">More Info
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -219,9 +218,7 @@
                                 <img class="card-img-top" src="https://static.wixstatic.com/media/855305_8644a59782384617804030b2a49d50bd.png/v1/fill/w_360,h_197,al_c,q_80/855305_8644a59782384617804030b2a49d50bd.webp" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">Cnix Designs</h5>
-                                    <h6>2010-Present</h6>
-                                    <p class="card-text">Freelance Graphic Designer</p>
-                                    <a href="#" class="btn">More Info</a>
+                                    <button type="button" class="btn btn-outline-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="2010-Present, Freelance Graphic Designer">More Info
                                 </div>
                             </div>
                         </div>
@@ -232,9 +229,7 @@
                                 <img class="card-img-top" src="https://www.hotelpalomar-sandiego.com/images/layout/palomar-san-diego-logo-f85537fc.png" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">Kimpton Hotels</h5>
-                                    <h6>2013</h6>
-                                    <p class="card-text">Assistant Spa Manager</p>
-                                    <a href="#" class="btn">More Info</a>
+                                    <button type="button" class="btn btn-outline-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="2013-2015, Assistant Spa Manager">More Info
                                 </div>
                             </div>
                         </div>
@@ -245,9 +240,7 @@
                                 <img class="card-img-top" src="https://sitejerk.com/images/hyatt-place-logo-png-15.png" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">Hyatt Place</h5>
-                                    <h6>2015-2016</h6>
-                                    <p class="card-text">Sales Coordinator</p>
-                                    <a href="#" class="btn">More Info</a>
+                                    <button type="button" class="btn btn-outline-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="2015-2016, Sales Coordinator">More Info
                                 </div>
                             </div>
                         </div>
@@ -355,9 +348,15 @@
     <script>
       AOS.init();
     </script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        $('.popover-dismiss').popover({
+            trigger: 'focus'
+            })
+    </script>
+    
 
     
 
