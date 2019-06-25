@@ -7,7 +7,7 @@ ctx = canvas.getContext('2d'),
 patriclesNum = 100,
            w = 2000,
            h = 1000,
-      colors = ['#7ef9ff','#ffffff', "black"];
+      colors = ['#7ef9ff','#00557a', '#000e14', '#003851'];
 
 canvas.width = 2000;
 canvas.height = 1000;
