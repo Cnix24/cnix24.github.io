@@ -12,10 +12,10 @@
     <title>Calvin Attl</title>
     
     <!-- Custom JS-->
-    <script type="text/javascript" src="./js/index.js"></script>
-    <script type="text/paperscript" src="js/myScript.js" canvas="myCanvas"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/jquery.flip.min.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/paperscript" src="js/myScript.js" canvas="myCanvas"></script>
 
     <!-- Custom CSS -->
     <link href="css/style.css" rel="stylesheet">
@@ -44,13 +44,38 @@
 </div>
     
 <canvas id="myCanvas"></canvas>
+     <!-- Vertical navbar -->
+     <div class="vertical-nav" id="sidebar">
+            <ul>
+                <li><a id="nav-name" href="#page-top">c</br>a</br>l</br>v</br>i</br>n</br></br></br></br>A</br>t</br>t</br>l</br></a></li>
+                <li><a id="nav-link" href="#about">About</a></li>
+                <li><a id="nav-link" href="#portfolio">Portfolio</a></li>
+                <li><a id="nav-link" href="#experience">Experience</a></li>
+                <li><a id="nav-link" href="#team">Team</a></li>
+                <li><a id="nav-link" href="#contact">Contact</a></li>
+            </ul>
+            
+            <div class="tiny-circle" title="Music while you wait?">
+                <i id="headphones" class="fas fa-headphones-alt"><audio id="playsong" controls preload="none"> 
+                        <source src="images/01 C'Mon (with Fun.).mp3" type="audio/mpeg">
+                    </audio></i>
+            </div>
+            <strong id="status"></strong>
+        </div>
+        <div class="container-major">
 
 
-<div class="container-major" id="page-top">
+<!-- 
+                <div class="music-box">
+                        <span><i id="music-notes" class="fas fa-music"></i></span>
+                        <span><i id="music-notes" class="fas fa-music"></i></span>
+                        <span><i id="music-notes" class="fas fa-music"></i></span>
+                        <span><i id="music-notes" class="fas fa-music"></i></span>
+                </div> -->
 
 <!-- Navigation -->
 
-<nav>
+<!-- <nav>
     <div class="navbar">
         <ul>
             <li><a id="nav-name" style="float: left" href="#page-top">calvin Attl</a></li>
@@ -61,19 +86,44 @@
             <li><a id="nav-link" href="#contact">Contact</a></li>
         </ul>
     </div>
-</nav>
-      
+</nav> -->
 
+
+
+<div class="page-content" id="content">
+                <!-- Toggle button -->
+                <button id="sidebarCollapse" type="button"><i class="far fa-dot-circle"></i></button>
+
+                <div class="soundbars">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        </div>
     <!-- ABOUT SECTION --->
-    <div class="row">
-        <div class="col-12" id="about-header">
+    <div class="row" id="about-header">
+        <div class="col-6" >
+                <div data-aos="zoom-out-right"
+                data-aos-duration="900"
+                class="line"></div>
             <h2>About</h2>
             <a href="https://github.com/Cnix24" type="button" class="button" id="linkbuttons">GitHub</a>
             <a href="www.linkedin.com/in/calvin-attl-014669186" type="button" class="button" id="linkbuttons">LinkedIn</a>
         </div>
+        <div class="col-3" id="abt-img">
+                <div class="circle">
+                    <img src="images/avataaars.png" id="avatar" alt="...">
+                </div>
+                <div data-aos="zoom-out-right"
+                data-aos-duration="900"
+                class="line"></div>
+        </div>
+        <div class="col-3">
+            <p>This is where I will put everything about me. I am a really big fan of Jeff and Korra nd I like these new beer things we have and the bose headphoens are great and I need to see how much text I really need to fit into this place</p>
+        </div>
     </div>
     <div class="row" id="about">
-        <div class="col-2" id="grid">
+        <div class="col-12" id="grid">
             <div class="card">
                 <div class="front">
                     <div class="rectangle" id="html-rectangle">
@@ -91,11 +141,9 @@
                     </div>
                 </div> 
                 <div class="back">
-                    <h2>B+</h2>
+                    <h2>B-</h2>
                 </div> 
             </div>
-        </div>
-        <div class="col-2" id="grid">
             <div class="card">
                 <div class="front">
                     <div class="rectangle" id="javascript-rectangle">
@@ -103,7 +151,7 @@
                     </div>
                 </div> 
                 <div class="back">
-                    <h2>B</h2>
+                    <h2>A-</h2>
                 </div> 
             </div>
             <div class="card">
@@ -113,21 +161,9 @@
                     </div>
                 </div> 
                 <div class="back">
-                    <h2>A-</h2>
+                    <h2>A</h2>
                 </div> 
-            </div>
-        </div>  
-        <div class="col-4" id="middle">
-            <div class="tiny-circle">
-                <a href="#page-top"><img src="images/play-button.png"  class="small-icon" alt=""></a>
-            </div>
-            <div class="circle">
-                <img src="images/avataaars.png" id="avatar" alt="...">
-            </div>
-            <div class="line">  
-            </div>
-        </div>
-        <div class="col-2" id="grid">
+            </div>  
             <div class="card">
                 <div class="front">
                     <div class="rectangle" id="illustrator-rectangle">
@@ -138,40 +174,37 @@
                     <h2>A+</h2>
                 </div> 
             </div>
-                <div class="card">
-                    <div class="front">
-                        <div class="rectangle" id="csharp-rectangle">
-                            <img src="images/C sharp.png" class="icon" alt=""> 
-                        </div>
-                    </div> 
-                    <div class="back">
-                        <h2>F</h2>
-                    </div> 
-                </div>
+            <div class="card">
+                <div class="front">
+                    <div class="rectangle" id="csharp-rectangle">
+                        <img src="images/C sharp.png" class="icon" alt=""> 
+                    </div>
+                </div> 
+                <div class="back">
+                    <h2>B-</h2>
+                </div> 
             </div>
-            <div class="col-2" id="grid">
-                <div class="card">
-                    <div class="front">
-                        <div class="rectangle" id="ps-rectangle">
-                            <img src="images/photoshop.png" class="icon" alt=""> 
-                        </div>
-                    </div> 
-                    <div class="back">
-                        <h2>A-</h2>
-                    </div> 
-                </div>
-                <div class="card">
-                    <div class="front">
-                        <div class="rectangle" id="irl-rectangle">
-                            <img src="images/brainstorm.png" class="icon" alt=""> 
-                        </div>
-                    </div> 
-                    <div class="back">
-                        <h2>A</h2>
-                    </div> 
-                </div>
-        </div>
-           
+            <div class="card">
+                <div class="front">
+                    <div class="rectangle" id="ps-rectangle">
+                        <img src="images/photoshop.png" class="icon" alt=""> 
+                    </div>
+                </div> 
+                <div class="back">
+                    <h2>A-</h2>
+                </div> 
+            </div>
+            <!-- <div class="card">
+                <div class="front">
+                    <div class="rectangle" id="irl-rectangle">
+                        <img src="images/brainstorm.png" class="icon" alt=""> 
+                    </div>
+                </div> 
+                <div class="back">
+                    <h2>A</h2>
+                </div> 
+            </div> -->
+        </div>   
     </div>
 
     <!-- Portfolio Section -->
@@ -180,9 +213,49 @@
             <h2 class="section-heading">Portfolio</h2>
         </div>
         <div class="col-12" id="portfolio">
-            <a href="" type="button" class="button">Graphic Design</a>
-            <a href="" type="button" class="button">Web Design</a>
-            <a href="" type="button" class="button">Programming</a>
+            <a id="reveal-gd" type="button" class="button">Graphic Design</a>
+            <a id="reveal-web" type="button" class="button">Web Design</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12" id="gd-section">
+            <div class="image-card">
+                   <a target="_blank" href="https://cbackman24.wixsite.com/portfolio/summertime-at-the-spa"><img src="https://static.wixstatic.com/media/855305_80b82e48430e4061b5958ce360316b31.jpg/v1/fill/w_796,h_796,al_c,q_90,usm_0.66_1.00_0.01/855305_80b82e48430e4061b5958ce360316b31.webp" class="portfolio-images" alt=""></a>
+            </div>
+            <div class="image-card">
+                    <a target="_blank" href="https://cbackman24.wixsite.com/portfolio/newspaper-invites"><img src="https://static.wixstatic.com/media/855305_f812ff81831541c2bfe1fba045e54d48.jpg/v1/fill/w_579,h_796,al_c,q_90,usm_0.66_1.00_0.01/855305_f812ff81831541c2bfe1fba045e54d48.webp" class="portfolio-images" alt=""></a>
+             </div>
+             <div class="image-card">
+                    <a target="_blank" href="https://cbackman24.wixsite.com/portfolio/video-game-tees"><img src="https://static.wixstatic.com/media/855305_180bf92bed3f49b68bb5c48ce4a154c4.jpg/v1/fill/w_921,h_691,al_c,q_90,usm_0.66_1.00_0.01/855305_180bf92bed3f49b68bb5c48ce4a154c4.webp" class="portfolio-images" alt=""></a>
+             </div>
+             <div class="image-card">
+                    <a target="_blank" href="https://cbackman24.wixsite.com/portfolio/sovari-candle-co-"><img src="https://static.wixstatic.com/media/855305_e14c35e5f8274e378acccf49220c4310.jpg/v1/fill/w_796,h_796,al_c,q_90,usm_0.66_1.00_0.01/855305_e14c35e5f8274e378acccf49220c4310.webp" class="portfolio-images" alt=""></a>
+             </div>
+             <div class="image-card">
+                    <a target="_blank" href="https://cbackman24.wixsite.com/portfolio"><img src="https://static.wixstatic.com/media/855305_6fd5b18cd5a3421c8a1320c513525dcd~mv2.jpg/v1/fill/w_1000,h_667,al_c,q_90/855305_6fd5b18cd5a3421c8a1320c513525dcd~mv2.webp" class="portfolio-images" alt=""></a>
+             </div>
+             <div class="image-card">
+                    <a target="_blank" href="https://cbackman24.wixsite.com/portfolio/student-projects"><img src="https://static.wixstatic.com/media/855305_bb7d8da6854941309bf25175a91d5611~mv2.gif" class="portfolio-images" alt=""></a>
+             </div>
+             <div class="image-card">
+                    <a target="_blank" href="https://cbackman24.wixsite.com/portfolio/project09"><img src="https://static.wixstatic.com/media/855305_6620d67588e94b54b8455ec0f822ee24~mv2.jpg/v1/fill/w_792,h_612,al_c,q_90/855305_6620d67588e94b54b8455ec0f822ee24~mv2.webp" class="portfolio-images" alt=""></a>
+             </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12" id="web-section">
+            <div class="image-card">
+                    <a target="_blank" href="https://github.com/Cnix24"><img src="../cnix24.github.io/images/invite.jpg" class="web-images" alt=""></a>
+            </div>
+            <div class="image-card">
+                    <a target="_blank" href="https://github.com/Cnix24"><img src="../cnix24.github.io/images/mariotictactoe.jpg" class="web-images" alt=""></a>
+            </div>
+            <div class="image-card">
+                <a target="_blank" href="https://github.com/Cnix24"><img src="../cnix24.github.io/images/space.jpg" class="web-images" alt=""></a>
+            </div>
+            <div class="image-card">
+                <a target="_blank" href="https://github.com/Cnix24"><img src="../cnix24.github.io/images/boostrap cinema.jpg" class="web-images" alt=""></a>
+            </div>
         </div>
     </div>
     
@@ -191,29 +264,18 @@
     <!---EXPERIENCE TITLE-->
     <div class="row">
         <div class="col-12" id="section-header">
-            <h2 class="section-heading">Experience</h2>
-            <h4>How I got here.</h4>
+            <h2 class="section-heading">Experience</h2><a type="button" class="button" id="reveal-exp"><img class="exparrow" src="images/double-arrow-down-512.png" alt=""></a>
         </div>
     </div>
-    <div class="col-12" id="portfolio">
-        <a type="button" class="large-button" id="reveal-exp"><img class="exparrow" src="images/double-arrow-down-512.png" alt="">Experience<img class="exparrow" src="images/double-arrow-down-512.png" alt=""></a>
-    </div>
-    <div class="row" id="reveal-section">
-        <div class="col-4" id="sectioning">
-            <h3 id="graphic-header">Graphic Design</h3>
-            <h3 id="hospitality-header">Hospitality</h3>
-            <h3 id="sales-header">Sales</h3>
-            <h3 id="web-design-header">Web Design</h3>
-            <h3 id="team-management-header">Team Management</h3>
-        </div>
-        <div class="col-8" id="code-content">
+    <div class="row" id="exp-section">
+        <div class="col-12" id="code-content">
 
             <!---Oliver's-->
             <p class="header-tags">&lt;div <span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"experience-1"</span>&gt;<span class="code-text"></span></p>
                 <p class="header-tags">&lt;h3 <span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"work-place"</span>&gt;<span class="code-text">Oliver's Markets</span>&lt;/h3&gt;</p>
                 <p class="header-tags">&nbsp;&nbsp;&nbsp;&nbsp;&lt;h6&gt;<span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"job-title"</span>&gt;<span class="code-text">Assistant Corporate Graphic Designer</span>&lt;/h6&gt;</p>
                     <p class="header-tags">&nbsp;&nbsp;&nbsp;&nbsp;&lt;h6&gt;<span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"location-time"</span><span class="class-tag">style</span><span class="code-text">=</span><span class="class-name">"muted"</span>&gt;<span class="code-text">Cotati, CA | 2007-2012</span>&lt;/h6&gt;</p>
-            <p class="header-tags">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;<span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"job-description"</span>&gt;<span class="code-text">Began my work life as a bagboy at a grocery store. I almost feel the need to mention I was a paperboy before that, but seems unnecessary. Started at 15 as a bagboy, moved up to a cashier at 18, then started working as the marketing director's assistant. She taught me Adobe Creative Suite on the job and I became very fluent. To this day, Adobe Illustrator is one of my favorite and most useful skills.</span>&lt;/p&gt;</p>
+            <p class="header-tags">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;<span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"job-description"</span>&gt;<span class="code-text" id="code-body">Three store gourmet grocery chain in Northern California. Started at 15 as a bagboy, moved up to a cashier at 18, then started working as the marketing director's assistant. The final position as Assistant Corporate Graphic Designer was a deep on-the-job education in Adobe Creative Suite.</span>&lt;/p&gt;</p>
             <p class="header-tags">&lt;/div&gt;</p>
             <!---Oliver's-->
 
@@ -231,7 +293,7 @@
             <p class="header-tags">&lt;h3 <span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"work-place"</span>&gt;<span class="code-text">Hotel Palomar San Diego/Nature's Spa by Jurlique</span>&lt;/h3&gt;</p>
                 <p class="header-tags">&nbsp;&nbsp;&nbsp;&nbsp;&lt;h6&gt;<span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"job-title"</span>&gt;<span class="code-text">Assistant Spa Manager</span>&lt;/h6&gt;</p>
                 <p class="header-tags">&nbsp;&nbsp;&nbsp;&nbsp;&lt;h6&gt;<span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"location-time"</span><span class="class-tag">style</span><span class="code-text">=</span><span class="class-name">"muted"</span>&gt;<span class="code-text">San Diego, CA | 2012-2015</span>&lt;/h6&gt;</p>
-                    <p class="header-tags">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;<span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"job-description"</span>&gt;<span class="code-text">While working at Oliver's, I began massage therapy vocational school. I moved to San Diego and began working as a massage therapist at Nature's Spa by Jurlique. After 6 months I was promoted to Lead Massage Therapist and later to Assistant Spa Manager. I enjoyed this position and it was my first job dabbling in web design. I created and edited much of our web presence, all with HTML/CSS skills I had taught myself. My better half recieved a job offer from a Denver company and we decided to move to this great city. I stayed with Kimpton Hotels when I arrived, as my massage therapy license didn't translate to Colorado.</span>&lt;/p&gt;</p>
+                    <p class="header-tags">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;<span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"job-description"</span>&gt;<span class="code-text">While working at Oliver's, began massage therapy vocational school. Moved to San Diego and began working as a massage therapist at Nature's Spa by Jurlique. After 6 months I was promoted to Lead Massage Therapist and later to Assistant Spa Manager. I enjoyed this position and it was my first job dabbling in web design. I created and edited much of our web presence, all with HTML/CSS skills I had taught myself. My better half recieved a job offer from a Denver company and we decided to move. I stayed with Kimpton Hotels when I arrived, as my massage therapy license didn't translate to Colorado.</span>&lt;/p&gt;</p>
             <p class="header-tags">&lt;/div&gt;</p>
             <!---Palomar-->
 
@@ -240,7 +302,7 @@
             <p class="header-tags">&lt;h3 <span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"work-place"</span>&gt;<span class="code-text">Hyatt Place Denver/Cherry Creek</span>&lt;/h3&gt;</p>
                 <p class="header-tags">&nbsp;&nbsp;&nbsp;&nbsp;&lt;h6&gt;<span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"job-title"</span>&gt;<span class="code-text">Sales Coordinator</span>&lt;/h6&gt;</p>
                 <p class="header-tags">&nbsp;&nbsp;&nbsp;&nbsp;&lt;h6&gt;<span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"location-time"</span><span class="class-tag">style</span><span class="code-text">=</span><span class="class-name">"muted"</span>&gt;<span class="code-text">Denver, CO | 2015-2016</span>&lt;/h6&gt;</p>
-                    <p class="header-tags">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;<span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"job-description"</span>&gt;<span class="code-text">The transfer position with Kimpton Hotels was a Guest Services position, quite different from my very autonomous Assistant Spa Manager position. I enjoyed hotel so I started looking into the possibility of a sales position and was offered the Sales Coordinator spot at the Hyatt Place. My responsibilities included assisting the Director of Sales and Sales Manager in their daily administrative work, organizing, planning, and executing group booking blocks, planning and coordinating all events in our 4 meeting spaces, and selling all group and event business. During my time at the Hyatt Place I increased the group and event sales by 116% year over year. To be clear, I landed some major accounts and the discrepancy is largerly from a few small successes.</span>&lt;/p&gt;</p>
+                    <p class="header-tags">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;<span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"job-description"</span>&gt;<span class="code-text">The transfer position with Kimpton Hotels was a Guest Services position, quite different from my very Assistant Spa Manager position. I enjoyed hospitality and explored the sales side. I was offered the Sales Coordinator position with the Hyatt Place. My responsibilities included assisting the Director of Sales and Sales Manager in their daily administrative work, organizing, planning, and executing group booking blocks, planning and coordinating all events in our 4 meeting spaces, and selling all group and event business. During my time at the Hyatt Place I increased the group and event sales by 116% year over year.</span>&lt;/p&gt;</p>
             <p class="header-tags">&lt;/div&gt;</p>
             <!---Hyatt-->
 
@@ -249,7 +311,7 @@
             <p class="header-tags">&lt;h3 <span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"work-place"</span>&gt;<span class="code-text">Hotel Indigo Denver Downtown</span>&lt;/h3&gt;</p>
                 <p class="header-tags">&nbsp;&nbsp;&nbsp;&nbsp;&lt;h6&gt;<span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"job-title"</span>&gt;<span class="code-text">Group and Event Sales Manager</span>&lt;/h6&gt;</p>
                 <p class="header-tags">&nbsp;&nbsp;&nbsp;&nbsp;&lt;h6&gt;<span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"location-time"</span><span class="class-tag">style</span><span class="code-text">=</span><span class="class-name">"muted"</span>&gt;<span class="code-text">Denver, CO | 2016-2017</span>&lt;/h6&gt;</p>
-                    <p class="header-tags">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;<span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"job-description"</span>&gt;<span class="code-text">After my successes with the Hyatt Place, I was poached for an Event Director position opening a brand new boutique hotel at Union Station. I was the fourth person hired for the hotel and got right to work selling the space. I also became a part of the final construction process, acting as boots-on-the-ground for the brand, management company, and ownership. During this process, I got an in-depth look at the inner workings of the Oracle Hotel Management software, Opera. I was tasked with choosing the final customizations etc. Spending a week with the Opera programmer was eye-opening and piqued my interest in pursuing an eventual career in the industry. While the final touches came together for the hotel an originally planned 9,000 square foot ballroom was scrapped and refinished as office space. This changed my Event Director trajectory to a Group and Events Sales Manager position. I followed through on successfully opening the hotel, solely planned a massive grand opening gala for 500 guests including the Mayor, and left my position with the hotel in more capable hands.</span>&lt;/p&gt;</p>
+                    <p class="header-tags">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;<span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"job-description"</span>&gt;<span class="code-text">After my successes with the Hyatt Place, I was specifically recruited for an Event Director position opening a brand new boutique hotel at Union Station. As the fourth person hired for the hotel, went to work selling the space and became a part of the final construction process, acting as boots-on-the-ground for the brand, management company, and ownership. During this process, I got an in-depth look at the inner workings of the Oracle Hotel Management software, Opera. I was tasked with choosing the final customizations etc. Spending a week with the Opera programmer was eye-opening and further piqued my interest in pursuing an eventual career in the industry. While the final touches came together for the hotel an originally planned 9,000 square foot ballroom was scrapped and refinished as office space. This changed my Event Director trajectory to an unplanned Group and Events Sales Manager position. Successfully opening the hotel, solely planned a massive grand opening gala for 500 guests including the Mayor of Denver, and left my position with the hotel in more capable hands.</span>&lt;/p&gt;</p>
             <p class="header-tags">&lt;/div&gt;</p>
             <!---Indigo-->
 
@@ -258,7 +320,7 @@
             <p class="header-tags">&lt;h3 <span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"work-place"</span>&gt;<span class="code-text">Briar Common Brewery + Eatery</span>&lt;/h3&gt;</p>
                 <p class="header-tags">&nbsp;&nbsp;&nbsp;&nbsp;&lt;h6&gt;<span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"job-title"</span>&gt;<span class="code-text">Marketing and Events Manager</span>&lt;/h6&gt;</p>
                 <p class="header-tags">&nbsp;&nbsp;&nbsp;&nbsp;&lt;h6&gt;<span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"location-time"</span><span class="class-tag">style</span><span class="code-text">=</span><span class="class-name">"muted"</span>&gt;<span class="code-text">Denver, CO | 2017-2019</span>&lt;/h6&gt;</p>
-                    <p class="header-tags">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;<span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"job-description"</span>&gt;<span class="code-text">My career with the hospitality industry was not going as I'd planned, so I took a lateral step. I began working for a fledgling brewery and restaurant in the Jefferson Park neighborhood as their Markeing and Events Manager. This position was originally posted as a simple job to promote the brewery and get their name out. The moment I saw the space I convinced the ownership to begin selling it as a private venue in addition to the everyday business. I did a really great job. Sales at this point came very easy to me and selling a space so gorgeous was no challenge at all. Another job, another chance to code... part of my job description was maintaining our website. I started to teach myself JavaScript while in this position in order to set-up an effective form for event bookings etc. As time went on, I started devoting much more time than necessary to the website and teaching myself these skills. I researched a few bootcamps and left this position to make the full plunge into the world of web design and programming.</span>&lt;/p&gt;</p>
+                    <p class="header-tags">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;<span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"job-description"</span>&gt;<span class="code-text">Took a lateral step within the hospitality industry and began working for a fledgling brewery and restaurant in the Jefferson Park neighborhood as their Marketing and Events Manager. Sold the space as a private venue in addition to promoting the everyday business. Event and daily sales increased signifcantly with well over 100% year-over-year increases for weeks at a time. While in this positiong I encountered another opportunity to code... part of my job description was maintaining our website. I started to teach myself JavaScript while in this position in order to set-up an effective form for event bookings etc. As time went on, I started devoting much more time than necessary to the website and teaching myself the skills. I researched a few bootcamps and left this position to make the full plunge into the world of web design and programming.</span>&lt;/p&gt;</p>
             <p class="header-tags">&lt;/div&gt;</p>
             <!---Briar Common-->
 
@@ -268,28 +330,18 @@
     <!---EDUCATION TITLE-->
     <div class="row">
         <div class="col-12" id="section-header">
-            <h2 class="section-heading">Education</h2>
-            <h4>How I learned!</h4>
+            <h2 class="section-heading">Education</h2><a type="button" class="button" id="reveal-edu"><img src="images/double-arrow-down-512.png" class="eduarrow" alt=""></a>
         </div>
-    </div>
-    <div class="col-12" id="portfolio">
-        <a type="button" class="large-button" id="reveal-edu"><img src="images/double-arrow-down-512.png" class="eduarrow" alt="">Education<img src="images/double-arrow-down-512.png" class="eduarrow" alt=""></a>
     </div>
     <div class="row" id="edu-section">
-        <div class="col-4" id="sectioning">
-            <h3 id="hospitality-header">Massage Therapy and Health Education</h3>
-            <h3 id="graphic-header">Graphic Design</h3>
-            <h3 id="sales-header">Sales</h3>
-            <h3 id="web-design-header">Programming</h3>
-        </div>
-        <div class="col-8" id="code-content">
+        <div class="col-12" id="code-content">
 
             <!---NHI-->
             <p class="header-tags">&lt;div <span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"schooling-1"</span>&gt;<span class="code-text"></span></p>
             <p class="header-tags">&lt;h3 <span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"institution"</span>&gt;<span class="code-text">National Holistic Institute</span>&lt;/h3&gt;</p>
                 <p class="header-tags">&nbsp;&nbsp;&nbsp;&nbsp;&lt;h6&gt;<span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"purpose"</span>&gt;<span class="code-text">Massage Therapy Certification and License | Health Education Certification</span>&lt;/h6&gt;</p>
                 <p class="header-tags">&nbsp;&nbsp;&nbsp;&nbsp;&lt;h6&gt;<span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"location-time"</span><span class="class-tag">style</span><span class="code-text">=</span><span class="class-name">"muted"</span>&gt;<span class="code-text">Petaluma, CA | 2011-2012</span>&lt;/h6&gt;</p>
-                    <p class="header-tags">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;<span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"description"</span>&gt;<span class="code-text">720-hour program. Split into East and West styles of massage, medicine, and physiology. I am much too logic focused to understand the East. Focused studies on deep tissue, myo-fascial therapy, and Swedish massage.</span>&lt;/p&gt;</p>
+                    <p class="header-tags">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;<span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"description"</span>&gt;<span class="code-text">720-hour program. Split into East and West styles of massage, medicine, and physiology. Focused studies on deep tissue, myo-fascial therapy, and Swedish massage.</span>&lt;/p&gt;</p>
             <p class="header-tags">&lt;/div&gt;</p>
             <!---NHI-->
 
@@ -298,7 +350,7 @@
             <p class="header-tags">&lt;h3 <span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"institution"</span>&gt;<span class="code-text">San Diego City College</span>&lt;/h3&gt;</p>
                 <p class="header-tags">&nbsp;&nbsp;&nbsp;&nbsp;&lt;h6&gt;<span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"purpose"</span>&gt;<span class="code-text">Associates Degree</span>&lt;/h6&gt;</p>
                 <p class="header-tags">&nbsp;&nbsp;&nbsp;&nbsp;&lt;h6&gt;<span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"location-time"</span><span class="class-tag">style</span><span class="code-text">=</span><span class="class-name">"muted"</span>&gt;<span class="code-text">San Diego, CA | 2013-2015</span>&lt;/h6&gt;</p>
-                    <p class="header-tags">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;<span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"description"</span>&gt;<span class="code-text">Achieved my associates degree at San Diego City College. All of my elective class choices were graphic design.</span>&lt;/p&gt;</p>
+                    <p class="header-tags">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;<span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"description"</span>&gt;<span class="code-text">Achieved my associates degree at San Diego City College. All of my elective class choices were graphic design focused.</span>&lt;/p&gt;</p>
             <p class="header-tags">&lt;/div&gt;</p>
             <!---SDCC-->
             <!---Dale Carnegie-->
@@ -306,10 +358,10 @@
             <p class="header-tags">&lt;h3 <span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"institution"</span>&gt;<span class="code-text">Dale Carnegie</span>&lt;/h3&gt;</p>
                 <p class="header-tags">&nbsp;&nbsp;&nbsp;&nbsp;&lt;h6&gt;<span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"purpose"</span>&gt;<span class="code-text">Winning with Relationship Selling</span>&lt;/h6&gt;</p>
                 <p class="header-tags">&nbsp;&nbsp;&nbsp;&nbsp;&lt;h6&gt;<span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"location-time"</span><span class="class-tag">style</span><span class="code-text">=</span><span class="class-name">"muted"</span>&gt;<span class="code-text">Denver, C0 | 2015-2016</span>&lt;/h6&gt;</p>
-                    <p class="header-tags">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;<span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"description"</span>&gt;<span class="code-text">Part of my position as Sales Coordinator of the Hyatt Place included a complimentary course in Winning with Relationship Selling. I was admittedly apprehensive about this course, as sales classes can be... salesy. The Dale Carnegie course however was very, very valuable for my position and I've never stopped using the system - from sales calls to personal calls.</span>&lt;/p&gt;</p>
+                    <p class="header-tags">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;<span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"description"</span>&gt;<span class="code-text">While working within hospitality sales, chose to take the Dale Carnegie course; Winning with Relationship Selling. This Dale Carnegie course was very, very valuable for my position and I've never stopped using the system - from sales calls to event management to my approach to web design.</span>&lt;/p&gt;</p>
             <p class="header-tags">&lt;/div&gt;</p>
             <!---Dale Carnegie-->
-            <!---Dale Carnegie-->
+            <!---Tech Academy-->
             <p class="header-tags">&lt;div <span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"schooling-4"</span>&gt;<span class="code-text"></span></p>
             <p class="header-tags">&lt;h3 <span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"institution"</span>&gt;<span class="code-text">The Tech Academy</span>&lt;/h3&gt;</p>
                 <p class="header-tags">&nbsp;&nbsp;&nbsp;&nbsp;&lt;h6&gt;<span class="class-tag">class</span><span class="code-text">=</span><span class="class-name">"purpose"</span>&gt;<span class="code-text">Web Development, C#, and .Net Framework Bootcamp</span>&lt;/h6&gt;</p>
@@ -325,7 +377,7 @@
                         <p class="header-tags">&lt;li&gt;<span class="code-text">Visual Studio</span>&lt;/li&gt;</p></p>
                         <p class="header-tags">&lt;li&gt;<span class="code-text">C# & .Net Framework</span>&lt;/li&gt;</p></p>
             <p class="header-tags">&lt;/div&gt;</p>
-            <!---Dale Carnegie-->
+            <!---Tech Academy-->
         
         </div>
     </div>
@@ -361,15 +413,7 @@
     <div class="row">
         <div class="col-12" id="section-header">
             <h2 class="section-heading">Contact</h2>
-            <h4>Reach out and give me monies.</h4>
-        </div>
-        <div class="col-4" id="form-container">
-            <form id="myForm" action="comment.php" method="post"> 
-                    Name: <input type="text" name="name" /> 
-                    Email: <input type="text" name="name" /> 
-                    Note: <textarea name="comment"></textarea> 
-                    <input type="submit" value="Submit Comment" /> 
-            </form>
+            <h3>Email: calvinattl24@gmail.com</h3>
         </div>
     </div>
 </div>
@@ -384,9 +428,10 @@
     </script>
 
     <!-- Custom JS-->
-    <script src="./js/index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    <script src="https://kit.fontawesome.com/18c241e1cd.js"></script>
+    <script src="./js/index.js"></script>
     
 </body>
 

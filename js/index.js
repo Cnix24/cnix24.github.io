@@ -1,3 +1,8 @@
+
+
+
+
+
 //CANVAS EFFECT
 
 var canvas = document.getElementById('myCanvas'),
@@ -93,8 +98,6 @@ window.requestAnimFrame = (function(){
 (function loop(){
     draw();
     requestAnimFrame(loop);
-
-
 })();
 
 //CANVAS EFFECT
@@ -115,9 +118,31 @@ $(window).ready(function() {
 
 
 
+//play song
+$("#headphones").click(function() {
+  $("#playsong")[0].play();
+  $("#status").text("Playing");
+  $("#status").css({"color": "rgba(0,142,204,0.5)"});
+  $("#headphones").css({"color": "rgba(0,142,204,0.8"})
+});
+
+
+
+
+//graphic design toggle
+$( "#reveal-gd" ).click(function() {
+  $( "#gd-section" ).toggle( "slow")
+
+});
+
+//graphic design toggle
+$( "#reveal-web" ).click(function() {
+  $( "#web-section" ).toggle( "slow")
+  });
+
 //experience toggle
 $( "#reveal-exp" ).click(function() {
-  $( "#reveal-section" ).toggle( "slow", function() {
+  $( "#exp-section" ).toggle( "slow", function() {
     $(".exparrow").toggleClass('flip');
   });
 });
@@ -135,6 +160,19 @@ $(function($) {
     trigger: 'click',
     axis: 'x'
   }); 
+});
+
+//sidetoggle
+$(function () {
+  $('#sidebarCollapse').on('click', function () {
+      $('#sidebar, #content').toggleClass('active');
+  });
+});
+
+
+//modal popup
+$( "#reveal-form" ).click(function() {
+  $("#myModal").modal('show');
 });
   
 
